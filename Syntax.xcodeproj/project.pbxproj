@@ -1,0 +1,874 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B44906819E99C4C00E81E05 /* Syntax.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B44906719E99C4C00E81E05 /* Syntax.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B44906E19E99C4D00E81E05 /* Syntax.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B44906219E99C4C00E81E05 /* Syntax.framework */; };
+		5B44907519E99C4D00E81E05 /* SyntaxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B44907419E99C4D00E81E05 /* SyntaxTests.m */; };
+		5B44907F19E99D7900E81E05 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B44907E19E99D7900E81E05 /* libz.dylib */; };
+		5B44908119E99D7D00E81E05 /* libncurses.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B44908019E99D7D00E81E05 /* libncurses.dylib */; };
+		5B44908319E99D8300E81E05 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B44908219E99D8300E81E05 /* libc++.dylib */; };
+		5B4490B619EC922000E81E05 /* SyntaxHighlighter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4490B419EC922000E81E05 /* SyntaxHighlighter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4490B719EC922000E81E05 /* SyntaxHighlighter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4490B519EC922000E81E05 /* SyntaxHighlighter.m */; };
+		5B4490BA19EC922F00E81E05 /* SyntaxSourceStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4490B819EC922F00E81E05 /* SyntaxSourceStorage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4490BB19EC922F00E81E05 /* SyntaxSourceStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4490B919EC922F00E81E05 /* SyntaxSourceStorage.m */; };
+		5B4490BE19EC923B00E81E05 /* SyntaxSourceFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4490BC19EC923B00E81E05 /* SyntaxSourceFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4490BF19EC923B00E81E05 /* SyntaxSourceFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4490BD19EC923B00E81E05 /* SyntaxSourceFile.m */; };
+		5B4490C219EC925D00E81E05 /* SyntaxDeclaration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4490C019EC925D00E81E05 /* SyntaxDeclaration.h */; };
+		5B4490C319EC925D00E81E05 /* SyntaxDeclaration.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4490C119EC925D00E81E05 /* SyntaxDeclaration.m */; };
+		5B4490C619EC926B00E81E05 /* SyntaxStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4490C419EC926B00E81E05 /* SyntaxStatement.h */; };
+		5B4490C719EC926B00E81E05 /* SyntaxStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4490C519EC926B00E81E05 /* SyntaxStatement.m */; };
+		5B4490CA19EC927700E81E05 /* SyntaxExpression.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4490C819EC927700E81E05 /* SyntaxExpression.h */; };
+		5B4490CB19EC927700E81E05 /* SyntaxExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4490C919EC927700E81E05 /* SyntaxExpression.m */; };
+		5B4490CE19EC927F00E81E05 /* SyntaxToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4490CC19EC927F00E81E05 /* SyntaxToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4490CF19EC927F00E81E05 /* SyntaxToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4490CD19EC927F00E81E05 /* SyntaxToken.m */; };
+		5B4490D419EC9D0100E81E05 /* SyntaxElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4490D219EC9D0100E81E05 /* SyntaxElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4490D519EC9D0100E81E05 /* SyntaxElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4490D319EC9D0100E81E05 /* SyntaxElement.m */; };
+		5B4490DB19ECD07100E81E05 /* SyntaxCursorElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4490D919ECD07100E81E05 /* SyntaxCursorElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4490DC19ECD07100E81E05 /* SyntaxCursorElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4490DA19ECD07100E81E05 /* SyntaxCursorElement.m */; };
+		5B4F2BE619FF072600CEAA3E /* SyntaxModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4F2BE419FF072600CEAA3E /* SyntaxModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4F2BE719FF072600CEAA3E /* SyntaxModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F2BE519FF072600CEAA3E /* SyntaxModule.m */; };
+		5B4F2BEB1A0005F200CEAA3E /* SyntaxDirective.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4F2BE91A0005F200CEAA3E /* SyntaxDirective.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4F2BEC1A0005F200CEAA3E /* SyntaxDirective.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F2BEA1A0005F200CEAA3E /* SyntaxDirective.m */; };
+		5B4F2BEF1A00060500CEAA3E /* SyntaxInclusionDirective.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4F2BED1A00060500CEAA3E /* SyntaxInclusionDirective.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B4F2BF01A00060500CEAA3E /* SyntaxInclusionDirective.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F2BEE1A00060500CEAA3E /* SyntaxInclusionDirective.m */; };
+		5B4F2BF51A01845000CEAA3E /* clang in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5B4F2BF21A01842900CEAA3E /* clang */; };
+		5B4F2C2A1A02F9BE00CEAA3E /* SyntaxContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4F2C281A02F9BE00CEAA3E /* SyntaxContainer.h */; };
+		5B4F2C2B1A02F9BE00CEAA3E /* SyntaxContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F2C291A02F9BE00CEAA3E /* SyntaxContainer.m */; };
+		5B4F2C731A06915700CEAA3E /* NSRunLoop+Block.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4F2C711A06915700CEAA3E /* NSRunLoop+Block.h */; };
+		5B4F2C741A06915700CEAA3E /* NSRunLoop+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4F2C721A06915700CEAA3E /* NSRunLoop+Block.m */; };
+		5B625DF619F430E500ED4DEA /* SyntaxTranslationUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B625DF419F430E500ED4DEA /* SyntaxTranslationUnit.h */; };
+		5B625DF719F430E500ED4DEA /* SyntaxTranslationUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B625DF519F430E500ED4DEA /* SyntaxTranslationUnit.m */; };
+		5BB0A4BD19F006340098E500 /* SyntaxType.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BB0A4BB19F006340098E500 /* SyntaxType.h */; };
+		5BB0A4BE19F006340098E500 /* SyntaxType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0A4BC19F006340098E500 /* SyntaxType.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B44906F19E99C4D00E81E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B44905919E99C4C00E81E05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B44906119E99C4C00E81E05;
+			remoteInfo = Syntax;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B4F2BF41A01843D00CEAA3E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Versions/Current;
+			dstSubfolderSpec = 1;
+			files = (
+				5B4F2BF51A01845000CEAA3E /* clang in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B44906219E99C4C00E81E05 /* Syntax.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Syntax.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B44906619E99C4C00E81E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B44906719E99C4C00E81E05 /* Syntax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Syntax.h; sourceTree = "<group>"; };
+		5B44906D19E99C4D00E81E05 /* SyntaxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyntaxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B44907319E99C4D00E81E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B44907419E99C4D00E81E05 /* SyntaxTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyntaxTests.m; sourceTree = "<group>"; };
+		5B44907E19E99D7900E81E05 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5B44908019E99D7D00E81E05 /* libncurses.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libncurses.dylib; path = usr/lib/libncurses.dylib; sourceTree = SDKROOT; };
+		5B44908219E99D8300E81E05 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		5B4490A219EA20DE00E81E05 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		5B4490B419EC922000E81E05 /* SyntaxHighlighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxHighlighter.h; sourceTree = "<group>"; };
+		5B4490B519EC922000E81E05 /* SyntaxHighlighter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxHighlighter.m; sourceTree = "<group>"; };
+		5B4490B819EC922F00E81E05 /* SyntaxSourceStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxSourceStorage.h; sourceTree = "<group>"; };
+		5B4490B919EC922F00E81E05 /* SyntaxSourceStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxSourceStorage.m; sourceTree = "<group>"; };
+		5B4490BC19EC923B00E81E05 /* SyntaxSourceFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxSourceFile.h; sourceTree = "<group>"; };
+		5B4490BD19EC923B00E81E05 /* SyntaxSourceFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxSourceFile.m; sourceTree = "<group>"; };
+		5B4490C019EC925D00E81E05 /* SyntaxDeclaration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxDeclaration.h; sourceTree = "<group>"; };
+		5B4490C119EC925D00E81E05 /* SyntaxDeclaration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxDeclaration.m; sourceTree = "<group>"; };
+		5B4490C419EC926B00E81E05 /* SyntaxStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxStatement.h; sourceTree = "<group>"; };
+		5B4490C519EC926B00E81E05 /* SyntaxStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxStatement.m; sourceTree = "<group>"; };
+		5B4490C819EC927700E81E05 /* SyntaxExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxExpression.h; sourceTree = "<group>"; };
+		5B4490C919EC927700E81E05 /* SyntaxExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxExpression.m; sourceTree = "<group>"; };
+		5B4490CC19EC927F00E81E05 /* SyntaxToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxToken.h; sourceTree = "<group>"; };
+		5B4490CD19EC927F00E81E05 /* SyntaxToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxToken.m; sourceTree = "<group>"; };
+		5B4490D019EC93BA00E81E05 /* SyntaxSourceFile+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxSourceFile+Internal.h"; sourceTree = "<group>"; };
+		5B4490D119EC94AB00E81E05 /* SyntaxHighlighter+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxHighlighter+Internal.h"; sourceTree = "<group>"; };
+		5B4490D219EC9D0100E81E05 /* SyntaxElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxElement.h; sourceTree = "<group>"; };
+		5B4490D319EC9D0100E81E05 /* SyntaxElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxElement.m; sourceTree = "<group>"; };
+		5B4490D619ECCC3C00E81E05 /* SyntaxToken+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxToken+Internal.h"; sourceTree = "<group>"; };
+		5B4490D719ECCCC500E81E05 /* SyntaxElement+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxElement+Internal.h"; sourceTree = "<group>"; };
+		5B4490D819ECCD9300E81E05 /* CXUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXUtils.h; sourceTree = "<group>"; };
+		5B4490D919ECD07100E81E05 /* SyntaxCursorElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxCursorElement.h; sourceTree = "<group>"; };
+		5B4490DA19ECD07100E81E05 /* SyntaxCursorElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxCursorElement.m; sourceTree = "<group>"; };
+		5B4490DD19ECD09C00E81E05 /* SyntaxCursorElement+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxCursorElement+Internal.h"; sourceTree = "<group>"; };
+		5B4490DE19ECD69500E81E05 /* SyntaxSourceStorage+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxSourceStorage+Internal.h"; sourceTree = "<group>"; };
+		5B4F2BE419FF072600CEAA3E /* SyntaxModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxModule.h; sourceTree = "<group>"; };
+		5B4F2BE519FF072600CEAA3E /* SyntaxModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxModule.m; sourceTree = "<group>"; };
+		5B4F2BE819FF073200CEAA3E /* SyntaxModule+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxModule+Internal.h"; sourceTree = "<group>"; };
+		5B4F2BE91A0005F200CEAA3E /* SyntaxDirective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxDirective.h; sourceTree = "<group>"; };
+		5B4F2BEA1A0005F200CEAA3E /* SyntaxDirective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxDirective.m; sourceTree = "<group>"; };
+		5B4F2BED1A00060500CEAA3E /* SyntaxInclusionDirective.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxInclusionDirective.h; sourceTree = "<group>"; };
+		5B4F2BEE1A00060500CEAA3E /* SyntaxInclusionDirective.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxInclusionDirective.m; sourceTree = "<group>"; };
+		5B4F2BF11A00069D00CEAA3E /* SyntaxDirective+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxDirective+Internal.h"; sourceTree = "<group>"; };
+		5B4F2BF21A01842900CEAA3E /* clang */ = {isa = PBXFileReference; lastKnownFileType = folder; name = clang; path = ../Shinobi/lib/clang; sourceTree = "<group>"; };
+		5B4F2C281A02F9BE00CEAA3E /* SyntaxContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxContainer.h; sourceTree = "<group>"; };
+		5B4F2C291A02F9BE00CEAA3E /* SyntaxContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxContainer.m; sourceTree = "<group>"; };
+		5B4F2C2C1A04088700CEAA3E /* NSMapTable+NSPointerArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMapTable+NSPointerArray.h"; sourceTree = "<group>"; };
+		5B4F2C711A06915700CEAA3E /* NSRunLoop+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunLoop+Block.h"; sourceTree = "<group>"; };
+		5B4F2C721A06915700CEAA3E /* NSRunLoop+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRunLoop+Block.m"; sourceTree = "<group>"; };
+		5B625DF419F430E500ED4DEA /* SyntaxTranslationUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxTranslationUnit.h; sourceTree = "<group>"; };
+		5B625DF519F430E500ED4DEA /* SyntaxTranslationUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxTranslationUnit.m; sourceTree = "<group>"; };
+		5B625DF819F440E900ED4DEA /* SyntaxTranslationUnit+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxTranslationUnit+Internal.h"; sourceTree = "<group>"; };
+		5BB0A4BB19F006340098E500 /* SyntaxType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxType.h; sourceTree = "<group>"; };
+		5BB0A4BC19F006340098E500 /* SyntaxType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyntaxType.m; sourceTree = "<group>"; };
+		5BB0A4BF19F0064A0098E500 /* SyntaxType+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SyntaxType+Internal.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B44905E19E99C4C00E81E05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B44908319E99D8300E81E05 /* libc++.dylib in Frameworks */,
+				5B44908119E99D7D00E81E05 /* libncurses.dylib in Frameworks */,
+				5B44907F19E99D7900E81E05 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B44906A19E99C4D00E81E05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B44906E19E99C4D00E81E05 /* Syntax.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B44905819E99C4C00E81E05 = {
+			isa = PBXGroup;
+			children = (
+				5B4F2BF21A01842900CEAA3E /* clang */,
+				5B44908419E99D8A00E81E05 /* libs */,
+				5B44906419E99C4C00E81E05 /* Syntax */,
+				5B44907119E99C4D00E81E05 /* SyntaxTests */,
+				5B44906319E99C4C00E81E05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B44906319E99C4C00E81E05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B44906219E99C4C00E81E05 /* Syntax.framework */,
+				5B44906D19E99C4D00E81E05 /* SyntaxTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B44906419E99C4C00E81E05 /* Syntax */ = {
+			isa = PBXGroup;
+			children = (
+				5B44906719E99C4C00E81E05 /* Syntax.h */,
+				5B4490B419EC922000E81E05 /* SyntaxHighlighter.h */,
+				5B4490B519EC922000E81E05 /* SyntaxHighlighter.m */,
+				5B4F2C281A02F9BE00CEAA3E /* SyntaxContainer.h */,
+				5B4F2C291A02F9BE00CEAA3E /* SyntaxContainer.m */,
+				5B4490D119EC94AB00E81E05 /* SyntaxHighlighter+Internal.h */,
+				5B4490B819EC922F00E81E05 /* SyntaxSourceStorage.h */,
+				5B4490B919EC922F00E81E05 /* SyntaxSourceStorage.m */,
+				5B4490DE19ECD69500E81E05 /* SyntaxSourceStorage+Internal.h */,
+				5B625DF419F430E500ED4DEA /* SyntaxTranslationUnit.h */,
+				5B625DF519F430E500ED4DEA /* SyntaxTranslationUnit.m */,
+				5B625DF819F440E900ED4DEA /* SyntaxTranslationUnit+Internal.h */,
+				5B4F2BE419FF072600CEAA3E /* SyntaxModule.h */,
+				5B4F2BE519FF072600CEAA3E /* SyntaxModule.m */,
+				5B4F2BE819FF073200CEAA3E /* SyntaxModule+Internal.h */,
+				5B4490BC19EC923B00E81E05 /* SyntaxSourceFile.h */,
+				5B4490BD19EC923B00E81E05 /* SyntaxSourceFile.m */,
+				5B4490D019EC93BA00E81E05 /* SyntaxSourceFile+Internal.h */,
+				5B4490D219EC9D0100E81E05 /* SyntaxElement.h */,
+				5B4490D319EC9D0100E81E05 /* SyntaxElement.m */,
+				5B4490D719ECCCC500E81E05 /* SyntaxElement+Internal.h */,
+				5B4490D919ECD07100E81E05 /* SyntaxCursorElement.h */,
+				5B4490DA19ECD07100E81E05 /* SyntaxCursorElement.m */,
+				5B4490DD19ECD09C00E81E05 /* SyntaxCursorElement+Internal.h */,
+				5B4490C019EC925D00E81E05 /* SyntaxDeclaration.h */,
+				5B4490C119EC925D00E81E05 /* SyntaxDeclaration.m */,
+				5B4F2BE91A0005F200CEAA3E /* SyntaxDirective.h */,
+				5B4F2BEA1A0005F200CEAA3E /* SyntaxDirective.m */,
+				5B4F2BF11A00069D00CEAA3E /* SyntaxDirective+Internal.h */,
+				5B4F2BED1A00060500CEAA3E /* SyntaxInclusionDirective.h */,
+				5B4F2BEE1A00060500CEAA3E /* SyntaxInclusionDirective.m */,
+				5B4490C419EC926B00E81E05 /* SyntaxStatement.h */,
+				5B4490C519EC926B00E81E05 /* SyntaxStatement.m */,
+				5B4490C819EC927700E81E05 /* SyntaxExpression.h */,
+				5B4490C919EC927700E81E05 /* SyntaxExpression.m */,
+				5B4490CC19EC927F00E81E05 /* SyntaxToken.h */,
+				5B4490CD19EC927F00E81E05 /* SyntaxToken.m */,
+				5B4490D619ECCC3C00E81E05 /* SyntaxToken+Internal.h */,
+				5BB0A4BB19F006340098E500 /* SyntaxType.h */,
+				5BB0A4BC19F006340098E500 /* SyntaxType.m */,
+				5BB0A4BF19F0064A0098E500 /* SyntaxType+Internal.h */,
+				5B4490D819ECCD9300E81E05 /* CXUtils.h */,
+				5B4F2C2C1A04088700CEAA3E /* NSMapTable+NSPointerArray.h */,
+				5B4F2C711A06915700CEAA3E /* NSRunLoop+Block.h */,
+				5B4F2C721A06915700CEAA3E /* NSRunLoop+Block.m */,
+				5B44906519E99C4C00E81E05 /* Supporting Files */,
+			);
+			path = Syntax;
+			sourceTree = "<group>";
+		};
+		5B44906519E99C4C00E81E05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B44906619E99C4C00E81E05 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B44907119E99C4D00E81E05 /* SyntaxTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B44907419E99C4D00E81E05 /* SyntaxTests.m */,
+				5B4490A219EA20DE00E81E05 /* test.c */,
+				5B44907219E99C4D00E81E05 /* Supporting Files */,
+			);
+			path = SyntaxTests;
+			sourceTree = "<group>";
+		};
+		5B44907219E99C4D00E81E05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B44907319E99C4D00E81E05 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B44908419E99D8A00E81E05 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				5B44908219E99D8300E81E05 /* libc++.dylib */,
+				5B44908019E99D7D00E81E05 /* libncurses.dylib */,
+				5B44907E19E99D7900E81E05 /* libz.dylib */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5B44905F19E99C4C00E81E05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4490BE19EC923B00E81E05 /* SyntaxSourceFile.h in Headers */,
+				5B4F2C2A1A02F9BE00CEAA3E /* SyntaxContainer.h in Headers */,
+				5B4490C619EC926B00E81E05 /* SyntaxStatement.h in Headers */,
+				5B4490D419EC9D0100E81E05 /* SyntaxElement.h in Headers */,
+				5B4F2BEF1A00060500CEAA3E /* SyntaxInclusionDirective.h in Headers */,
+				5B625DF619F430E500ED4DEA /* SyntaxTranslationUnit.h in Headers */,
+				5B44906819E99C4C00E81E05 /* Syntax.h in Headers */,
+				5B4490DB19ECD07100E81E05 /* SyntaxCursorElement.h in Headers */,
+				5B4490CE19EC927F00E81E05 /* SyntaxToken.h in Headers */,
+				5B4490B619EC922000E81E05 /* SyntaxHighlighter.h in Headers */,
+				5B4490C219EC925D00E81E05 /* SyntaxDeclaration.h in Headers */,
+				5B4F2BE619FF072600CEAA3E /* SyntaxModule.h in Headers */,
+				5BB0A4BD19F006340098E500 /* SyntaxType.h in Headers */,
+				5B4F2BEB1A0005F200CEAA3E /* SyntaxDirective.h in Headers */,
+				5B4490CA19EC927700E81E05 /* SyntaxExpression.h in Headers */,
+				5B4490BA19EC922F00E81E05 /* SyntaxSourceStorage.h in Headers */,
+				5B4F2C731A06915700CEAA3E /* NSRunLoop+Block.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5B44906119E99C4C00E81E05 /* Syntax */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B44907819E99C4D00E81E05 /* Build configuration list for PBXNativeTarget "Syntax" */;
+			buildPhases = (
+				5B44905D19E99C4C00E81E05 /* Sources */,
+				5B44905E19E99C4C00E81E05 /* Frameworks */,
+				5B44905F19E99C4C00E81E05 /* Headers */,
+				5B44906019E99C4C00E81E05 /* Resources */,
+				5B4F2BF41A01843D00CEAA3E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Syntax;
+			productName = Syntax;
+			productReference = 5B44906219E99C4C00E81E05 /* Syntax.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5B44906C19E99C4D00E81E05 /* SyntaxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B44907B19E99C4D00E81E05 /* Build configuration list for PBXNativeTarget "SyntaxTests" */;
+			buildPhases = (
+				5B44906919E99C4D00E81E05 /* Sources */,
+				5B44906A19E99C4D00E81E05 /* Frameworks */,
+				5B44906B19E99C4D00E81E05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B44907019E99C4D00E81E05 /* PBXTargetDependency */,
+			);
+			name = SyntaxTests;
+			productName = SyntaxTests;
+			productReference = 5B44906D19E99C4D00E81E05 /* SyntaxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B44905919E99C4C00E81E05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Philippe Hausler";
+				TargetAttributes = {
+					5B44906119E99C4C00E81E05 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					5B44906C19E99C4D00E81E05 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 5B44905C19E99C4C00E81E05 /* Build configuration list for PBXProject "Syntax" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B44905819E99C4C00E81E05;
+			productRefGroup = 5B44906319E99C4C00E81E05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B44906119E99C4C00E81E05 /* Syntax */,
+				5B44906C19E99C4D00E81E05 /* SyntaxTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B44906019E99C4C00E81E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B44906B19E99C4D00E81E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B44905D19E99C4C00E81E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4490B719EC922000E81E05 /* SyntaxHighlighter.m in Sources */,
+				5B4F2BF01A00060500CEAA3E /* SyntaxInclusionDirective.m in Sources */,
+				5B4F2C741A06915700CEAA3E /* NSRunLoop+Block.m in Sources */,
+				5B4490BF19EC923B00E81E05 /* SyntaxSourceFile.m in Sources */,
+				5B4F2BE719FF072600CEAA3E /* SyntaxModule.m in Sources */,
+				5B4490CF19EC927F00E81E05 /* SyntaxToken.m in Sources */,
+				5B4490D519EC9D0100E81E05 /* SyntaxElement.m in Sources */,
+				5B625DF719F430E500ED4DEA /* SyntaxTranslationUnit.m in Sources */,
+				5BB0A4BE19F006340098E500 /* SyntaxType.m in Sources */,
+				5B4F2C2B1A02F9BE00CEAA3E /* SyntaxContainer.m in Sources */,
+				5B4F2BEC1A0005F200CEAA3E /* SyntaxDirective.m in Sources */,
+				5B4490BB19EC922F00E81E05 /* SyntaxSourceStorage.m in Sources */,
+				5B4490C319EC925D00E81E05 /* SyntaxDeclaration.m in Sources */,
+				5B4490CB19EC927700E81E05 /* SyntaxExpression.m in Sources */,
+				5B4490DC19ECD07100E81E05 /* SyntaxCursorElement.m in Sources */,
+				5B4490C719EC926B00E81E05 /* SyntaxStatement.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B44906919E99C4D00E81E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B44907519E99C4D00E81E05 /* SyntaxTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B44907019E99C4D00E81E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B44906119E99C4C00E81E05 /* Syntax */;
+			targetProxy = 5B44906F19E99C4D00E81E05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5B44907619E99C4D00E81E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5B44907719E99C4D00E81E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B44907919E99C4D00E81E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ Betas/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(SRCROOT)/external/include",
+				);
+				INFOPLIST_FILE = Syntax/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/external/lib";
+				OTHER_LDFLAGS = (
+					"-lclang",
+					"-lclangAnalysis",
+					"-lclangARCMigrate",
+					"-lclangAST",
+					"-lclangASTMatchers",
+					"-lclangBasic",
+					"-lclangCodeGen",
+					"-lclangDriver",
+					"-lclangDynamicASTMatchers",
+					"-lclangEdit",
+					"-lclangFormat",
+					"-lclangFrontend",
+					"-lclangFrontendTool",
+					"-lclangIndex",
+					"-lclangLex",
+					"-lclangParse",
+					"-lclangRewrite",
+					"-lclangRewriteFrontend",
+					"-lclangSema",
+					"-lclangSerialization",
+					"-lclangStaticAnalyzerCheckers",
+					"-lclangStaticAnalyzerCore",
+					"-lclangStaticAnalyzerFrontend",
+					"-lclangTooling",
+					"-lLLVMLTO",
+					"-lLLVMObjCARCOpts",
+					"-lLLVMLinker",
+					"-lLLVMipo",
+					"-lLLVMVectorize",
+					"-lLLVMBitWriter",
+					"-lLLVMIRReader",
+					"-lLLVMAsmParser",
+					"-lLLVMR600CodeGen",
+					"-lLLVMR600Desc",
+					"-lLLVMR600Info",
+					"-lLLVMR600AsmPrinter",
+					"-lLLVMSystemZDisassembler",
+					"-lLLVMSystemZCodeGen",
+					"-lLLVMSystemZAsmParser",
+					"-lLLVMSystemZDesc",
+					"-lLLVMSystemZInfo",
+					"-lLLVMSystemZAsmPrinter",
+					"-lLLVMHexagonCodeGen",
+					"-lLLVMHexagonAsmPrinter",
+					"-lLLVMHexagonDesc",
+					"-lLLVMHexagonInfo",
+					"-lLLVMNVPTXCodeGen",
+					"-lLLVMNVPTXDesc",
+					"-lLLVMNVPTXInfo",
+					"-lLLVMNVPTXAsmPrinter",
+					"-lLLVMCppBackendCodeGen",
+					"-lLLVMCppBackendInfo",
+					"-lLLVMMSP430CodeGen",
+					"-lLLVMMSP430Desc",
+					"-lLLVMMSP430Info",
+					"-lLLVMMSP430AsmPrinter",
+					"-lLLVMXCoreDisassembler",
+					"-lLLVMXCoreCodeGen",
+					"-lLLVMXCoreDesc",
+					"-lLLVMXCoreInfo",
+					"-lLLVMXCoreAsmPrinter",
+					"-lLLVMMipsDisassembler",
+					"-lLLVMMipsCodeGen",
+					"-lLLVMMipsAsmParser",
+					"-lLLVMMipsDesc",
+					"-lLLVMMipsInfo",
+					"-lLLVMMipsAsmPrinter",
+					"-lLLVMAArch64Disassembler",
+					"-lLLVMAArch64CodeGen",
+					"-lLLVMAArch64AsmParser",
+					"-lLLVMAArch64Desc",
+					"-lLLVMAArch64Info",
+					"-lLLVMAArch64AsmPrinter",
+					"-lLLVMAArch64Utils",
+					"-lLLVMARMDisassembler",
+					"-lLLVMARMCodeGen",
+					"-lLLVMARMAsmParser",
+					"-lLLVMARMDesc",
+					"-lLLVMARMInfo",
+					"-lLLVMARMAsmPrinter",
+					"-lLLVMPowerPCDisassembler",
+					"-lLLVMPowerPCCodeGen",
+					"-lLLVMPowerPCAsmParser",
+					"-lLLVMPowerPCDesc",
+					"-lLLVMPowerPCInfo",
+					"-lLLVMPowerPCAsmPrinter",
+					"-lLLVMSparcDisassembler",
+					"-lLLVMSparcCodeGen",
+					"-lLLVMSparcAsmParser",
+					"-lLLVMSparcDesc",
+					"-lLLVMSparcInfo",
+					"-lLLVMSparcAsmPrinter",
+					"-lLLVMTableGen",
+					"-lLLVMDebugInfo",
+					"-lLLVMOption",
+					"-lLLVMX86Disassembler",
+					"-lLLVMX86AsmParser",
+					"-lLLVMX86CodeGen",
+					"-lLLVMSelectionDAG",
+					"-lLLVMAsmPrinter",
+					"-lLLVMX86Desc",
+					"-lLLVMX86Info",
+					"-lLLVMX86AsmPrinter",
+					"-lLLVMX86Utils",
+					"-lLLVMJIT",
+					"-lLLVMLineEditor",
+					"-lLLVMMCAnalysis",
+					"-lLLVMMCDisassembler",
+					"-lLLVMInstrumentation",
+					"-lLLVMInterpreter",
+					"-lLLVMCodeGen",
+					"-lLLVMScalarOpts",
+					"-lLLVMInstCombine",
+					"-lLLVMTransformUtils",
+					"-lLLVMipa",
+					"-lLLVMAnalysis",
+					"-lLLVMProfileData",
+					"-lLLVMMCJIT",
+					"-lLLVMTarget",
+					"-lLLVMRuntimeDyld",
+					"-lLLVMObject",
+					"-lLLVMMCParser",
+					"-lLLVMBitReader",
+					"-lLLVMExecutionEngine",
+					"-lLLVMMC",
+					"-lLLVMCore",
+					"-lLLVMSupport",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5B44907A19E99C4D00E81E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode\\ Betas/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"$(SRCROOT)/external/include",
+				);
+				INFOPLIST_FILE = Syntax/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/external/lib";
+				OTHER_LDFLAGS = (
+					"-lclang",
+					"-lclangAnalysis",
+					"-lclangARCMigrate",
+					"-lclangAST",
+					"-lclangASTMatchers",
+					"-lclangBasic",
+					"-lclangCodeGen",
+					"-lclangDriver",
+					"-lclangDynamicASTMatchers",
+					"-lclangEdit",
+					"-lclangFormat",
+					"-lclangFrontend",
+					"-lclangFrontendTool",
+					"-lclangIndex",
+					"-lclangLex",
+					"-lclangParse",
+					"-lclangRewrite",
+					"-lclangRewriteFrontend",
+					"-lclangSema",
+					"-lclangSerialization",
+					"-lclangStaticAnalyzerCheckers",
+					"-lclangStaticAnalyzerCore",
+					"-lclangStaticAnalyzerFrontend",
+					"-lclangTooling",
+					"-lLLVMLTO",
+					"-lLLVMObjCARCOpts",
+					"-lLLVMLinker",
+					"-lLLVMipo",
+					"-lLLVMVectorize",
+					"-lLLVMBitWriter",
+					"-lLLVMIRReader",
+					"-lLLVMAsmParser",
+					"-lLLVMR600CodeGen",
+					"-lLLVMR600Desc",
+					"-lLLVMR600Info",
+					"-lLLVMR600AsmPrinter",
+					"-lLLVMSystemZDisassembler",
+					"-lLLVMSystemZCodeGen",
+					"-lLLVMSystemZAsmParser",
+					"-lLLVMSystemZDesc",
+					"-lLLVMSystemZInfo",
+					"-lLLVMSystemZAsmPrinter",
+					"-lLLVMHexagonCodeGen",
+					"-lLLVMHexagonAsmPrinter",
+					"-lLLVMHexagonDesc",
+					"-lLLVMHexagonInfo",
+					"-lLLVMNVPTXCodeGen",
+					"-lLLVMNVPTXDesc",
+					"-lLLVMNVPTXInfo",
+					"-lLLVMNVPTXAsmPrinter",
+					"-lLLVMCppBackendCodeGen",
+					"-lLLVMCppBackendInfo",
+					"-lLLVMMSP430CodeGen",
+					"-lLLVMMSP430Desc",
+					"-lLLVMMSP430Info",
+					"-lLLVMMSP430AsmPrinter",
+					"-lLLVMXCoreDisassembler",
+					"-lLLVMXCoreCodeGen",
+					"-lLLVMXCoreDesc",
+					"-lLLVMXCoreInfo",
+					"-lLLVMXCoreAsmPrinter",
+					"-lLLVMMipsDisassembler",
+					"-lLLVMMipsCodeGen",
+					"-lLLVMMipsAsmParser",
+					"-lLLVMMipsDesc",
+					"-lLLVMMipsInfo",
+					"-lLLVMMipsAsmPrinter",
+					"-lLLVMAArch64Disassembler",
+					"-lLLVMAArch64CodeGen",
+					"-lLLVMAArch64AsmParser",
+					"-lLLVMAArch64Desc",
+					"-lLLVMAArch64Info",
+					"-lLLVMAArch64AsmPrinter",
+					"-lLLVMAArch64Utils",
+					"-lLLVMARMDisassembler",
+					"-lLLVMARMCodeGen",
+					"-lLLVMARMAsmParser",
+					"-lLLVMARMDesc",
+					"-lLLVMARMInfo",
+					"-lLLVMARMAsmPrinter",
+					"-lLLVMPowerPCDisassembler",
+					"-lLLVMPowerPCCodeGen",
+					"-lLLVMPowerPCAsmParser",
+					"-lLLVMPowerPCDesc",
+					"-lLLVMPowerPCInfo",
+					"-lLLVMPowerPCAsmPrinter",
+					"-lLLVMSparcDisassembler",
+					"-lLLVMSparcCodeGen",
+					"-lLLVMSparcAsmParser",
+					"-lLLVMSparcDesc",
+					"-lLLVMSparcInfo",
+					"-lLLVMSparcAsmPrinter",
+					"-lLLVMTableGen",
+					"-lLLVMDebugInfo",
+					"-lLLVMOption",
+					"-lLLVMX86Disassembler",
+					"-lLLVMX86AsmParser",
+					"-lLLVMX86CodeGen",
+					"-lLLVMSelectionDAG",
+					"-lLLVMAsmPrinter",
+					"-lLLVMX86Desc",
+					"-lLLVMX86Info",
+					"-lLLVMX86AsmPrinter",
+					"-lLLVMX86Utils",
+					"-lLLVMJIT",
+					"-lLLVMLineEditor",
+					"-lLLVMMCAnalysis",
+					"-lLLVMMCDisassembler",
+					"-lLLVMInstrumentation",
+					"-lLLVMInterpreter",
+					"-lLLVMCodeGen",
+					"-lLLVMScalarOpts",
+					"-lLLVMInstCombine",
+					"-lLLVMTransformUtils",
+					"-lLLVMipa",
+					"-lLLVMAnalysis",
+					"-lLLVMProfileData",
+					"-lLLVMMCJIT",
+					"-lLLVMTarget",
+					"-lLLVMRuntimeDyld",
+					"-lLLVMObject",
+					"-lLLVMMCParser",
+					"-lLLVMBitReader",
+					"-lLLVMExecutionEngine",
+					"-lLLVMMC",
+					"-lLLVMCore",
+					"-lLLVMSupport",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5B44907C19E99C4D00E81E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SyntaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5B44907D19E99C4D00E81E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SyntaxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B44905C19E99C4C00E81E05 /* Build configuration list for PBXProject "Syntax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B44907619E99C4D00E81E05 /* Debug */,
+				5B44907719E99C4D00E81E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B44907819E99C4D00E81E05 /* Build configuration list for PBXNativeTarget "Syntax" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B44907919E99C4D00E81E05 /* Debug */,
+				5B44907A19E99C4D00E81E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B44907B19E99C4D00E81E05 /* Build configuration list for PBXNativeTarget "SyntaxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B44907C19E99C4D00E81E05 /* Debug */,
+				5B44907D19E99C4D00E81E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B44905919E99C4C00E81E05 /* Project object */;
+}
